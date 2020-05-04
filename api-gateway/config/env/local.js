@@ -1,33 +1,34 @@
 'use strict';
 
 module.exports = {
-  app: {
-      title: 'Curryfull',
-      description: 'Curryfull'
-  },
-  db: {
-      mongodb: {
-          uri: 'mongodb+srv://gmuser:gmuser5@gm-dev-ccj4h.mongodb.net/dev?retryWrites=true&w=majority',
-          options: {
-              user: '',
-              pass: ''
-          },
-          debug: process.env.MONGODB_DEBUG || false
-      }
-  },
-  jwt: {
-      normal: {
-          secret: 'qCZe6np3uSELbnQDP4JBvFkRmbbFw4aA',
-          expiresIn: '365d' //365 days
-      },
-      password: {
-        secret: 'gJdFGPq22rVZDJWP9XnhUwRjy3U5whDy',
-        expiresIn: '1h'
-      }
-  },
-  cors : {
-    list : ['http://127.0.0.1:8080','http://localhost:8080']
-  },
+    app: {
+        title: 'Demo project',
+        description: 'Demo project'
+    },
+    db: {
+        mongodb: {
+            uri: 'DB link',
+            options: {
+                user: '',
+                pass: ''
+            },
+            debug: process.env.MONGODB_DEBUG || false
+        }
+    },
+    jwt: {
+        normal: {
+            secret: 'qCZe6np3uSELbnQDP4JBvFkRmbbFw4aAwq',
+            expiresIn: '30d' //365 days
+        },
+        password: {
+          secret: 'gJdFGPq22rVZDJWP9XnhUwRjy3U5whDy',
+          expiresIn: '1h'
+        }
+    },
+    cors : {
+      list : ['http://127.0.0.1:3000','http://localhost:3001']
+    },
+  
   sendgrid: {
       apiKey: '<key>',
       defaultEmailFromName: 'no reply bot - healthathomes',
