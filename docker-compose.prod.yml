@@ -1,0 +1,29 @@
+version: '3'
+services:
+  gm-user-service:
+    build: ./user-service
+    container_name: gm-user-service
+    ports:
+      - "8081:8081"
+    environment:
+      - NODE_ENV=production  
+    networks:
+      - mynet 
+  gm-api-gateway:
+    build: './api-gateway'
+    container_name: gm-api-gateway
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production  
+    links:
+      - gm-user-service
+    networks:
+      - mynet    
+networks:
+  mynet:
+    driver: bridge
+    ipam:
+      driver: default        
+    
+  
