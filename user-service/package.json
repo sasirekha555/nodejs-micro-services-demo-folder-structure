@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.445.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "chalk": "^2.4.2",
     "cookie-parser": "^1.4.4",
