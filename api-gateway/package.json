@@ -24,7 +24,7 @@
     "logops": "^2.1.0",
     "method-override": "^3.0.0",
     "mongoose": "^5.5.2",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "request": "^2.88.0",
     "winston": "^3.2.1"
   }
